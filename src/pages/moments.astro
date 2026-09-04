@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from "astro:content";
+import PostCard from "@components/PostCard.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getPostUrlBySlug } from "@utils/url-utils";
+import { getSortedPosts } from "../utils/content-utils";
+
+const sortedPosts = await getSortedPosts();
+const momentPosts = sortedPosts.filter((entry: CollectionEntry<"posts">) => {
+	const category = entry.data.category?.trim().toLowerCase() || "";
+	const tags = entry.data.tags.map((tag) => tag.trim().toLowerCase());
+
+	return (
+		category === "日常 moment" ||
+		category === "moment" ||
+		category === "moments" ||
+		category === "日常" ||
+		tags.includes("moment") ||
+		tags.includes("moments") ||
+		tags.includes("日常")
+	);
+});
+
+let delay = 0;
+const interval = 50;
+---
+
+<MainGridLayout title="日常 Moment">
+	<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+		{momentPosts.length > 0 ? (
+			momentPosts.map((entry: CollectionEntry<"posts">) => (
+				<PostCard
+					entry={entry}
+					title={entry.data.title}
+					tags={entry.data.tags}
+					category={entry.data.category}
+					published={entry.data.published}
+					updated={entry.data.updated}
+					url={getPostUrlBySlug(entry.slug)}
+					image={entry.data.image}
+					description={entry.data.description}
+					draft={entry.data.draft}
+					class:list="onload-animation"
+					style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+				/>
+			))
+		) : (
+			<section class="card-base p-6 text-center text-neutral-500 dark:text-neutral-400 onload-animation">
+				这里还没有 Moment。写一篇分类为「日常 Moment」的 Markdown，它就会出现在这里。
+			</section>
+		)}
+	</div>
+</MainGridLayout>

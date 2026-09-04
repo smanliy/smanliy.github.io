@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "/assets/hero-background.mp4", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "/src/assets/images/bg.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -43,15 +43,31 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+		{
+			name: "日常 Moment",
+			url: "/moments/",
+		},
 		LinkPreset.About,
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/assets/avatar-wolf.svg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "月下慢写",
-	bio: "写一点温柔，留一点锋芒。把心事、月光和灰太狼一起收进字里。",
-	links: [],
+	avatar: "/src/assets/images/wolf.gif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "灰太狼大王",
+	bio: "我灰太狼大王一定会回来的",
+	links: [
+		{
+			name: "邮箱",
+			icon: "material-symbols:mail-outline",
+			url: "mailto:3445515552@qq.com",
+			copyText: "3445515552@qq.com",
+		},
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/smanliy",
+		},
+	],
 };
 
 export const licenseConfig: LicenseConfig = {
