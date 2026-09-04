@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" role="img" aria-label="Moonlit wolf castle banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101729"/>
+      <stop offset="55%" stop-color="#1d2339"/>
+      <stop offset="100%" stop-color="#352437"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="58%" cy="28%" r="28%">
+      <stop offset="0%" stop-color="#fff7e7" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#f7e4c4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f7e4c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ea"/>
+      <stop offset="100%" stop-color="#e7d1a8"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#d7d1df" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a59bb2" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243247"/>
+      <stop offset="100%" stop-color="#0b0f18"/>
+    </linearGradient>
+    <linearGradient id="castleFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8d7893"/>
+      <stop offset="100%" stop-color="#5f455d"/>
+    </linearGradient>
+    <linearGradient id="castleSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6f586d"/>
+      <stop offset="100%" stop-color="#45364b"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff7b95"/>
+      <stop offset="100%" stop-color="#b94c7a"/>
+    </linearGradient>
+    <linearGradient id="forest" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#406151"/>
+      <stop offset="100%" stop-color="#1b2f2c"/>
+    </linearGradient>
+    <linearGradient id="wolf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b4b0b7"/>
+      <stop offset="100%" stop-color="#6c6770"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="10" flood-color="#05070d" flood-opacity="0.45"/>
+    </filter>
+    <filter id="mistBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="620" fill="url(#sky)"/>
+  <circle cx="1080" cy="168" r="170" fill="url(#moonGlow)"/>
+  <circle cx="1080" cy="168" r="92" fill="url(#moon)"/>
+
+  <g fill="#f4d8c8" opacity="0.85">
+    <circle cx="190" cy="120" r="1.8"/>
+    <circle cx="270" cy="82" r="1.3"/>
+    <circle cx="430" cy="98" r="2.0"/>
+    <circle cx="590" cy="164" r="1.5"/>
+    <circle cx="760" cy="92" r="1.7"/>
+    <circle cx="1250" cy="96" r="1.6"/>
+    <circle cx="1410" cy="142" r="1.9"/>
+    <circle cx="1320" cy="250" r="1.4"/>
+  </g>
+
+  <g opacity="0.3" filter="url(#mistBlur)">
+    <ellipse cx="520" cy="260" rx="260" ry="52" fill="#c9c1d8">
+      <animate attributeName="cx" values="500;530;500" dur="16s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="1060" cy="238" rx="330" ry="60" fill="#d8d1e0">
+      <animate attributeName="cx" values="1045;1070;1045" dur="18s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <g transform="translate(0 290)">
+    <path d="M0 110C110 80 198 82 298 62C432 35 535 -4 662 15C791 34 857 95 977 92C1097 89 1199 25 1325 24C1422 23 1505 52 1600 36V330H0Z" fill="url(#hill)"/>
+    <path d="M0 160C126 132 239 137 338 118C463 93 544 54 667 69C783 83 855 141 970 141C1097 141 1189 85 1315 83C1408 82 1497 104 1600 92V330H0Z" fill="#090d16" opacity="0.75"/>
+  </g>
+
+  <!-- Left forest -->
+  <g transform="translate(0 176)">
+    <g fill="url(#forest)">
+      <path d="M0 284c28-78 61-126 92-159 30 31 54 62 71 97 16-31 38-63 67-96 29 35 55 75 72 126 19-24 42-48 68-71 20 44 30 79 33 103H0Z"/>
+      <path d="M144 286c20-65 47-105 78-140 32 31 52 66 68 107 13-20 31-40 52-58 21 31 37 68 47 114H144Z" opacity="0.92"/>
+    </g>
+    <g fill="#2d4b41" opacity="0.8">
+      <circle cx="52" cy="108" r="38"/>
+      <circle cx="92" cy="142" r="50"/>
+      <circle cx="169" cy="104" r="45"/>
+      <circle cx="245" cy="126" r="56"/>
+      <circle cx="320" cy="89" r="40"/>
+      <circle cx="416" cy="116" r="58"/>
+      <circle cx="506" cy="96" r="52"/>
+    </g>
+  </g>
+
+  <!-- Moon backlight behind castle -->
+  <g transform="translate(960 110)" opacity="0.3">
+    <ellipse cx="100" cy="92" rx="130" ry="130" fill="#fff5d7"/>
+  </g>
+
+  <!-- Castle positioned to the right -->
+  <g transform="translate(975 155)" filter="url(#softShadow)">
+    <path d="M118 330h170l-18-150H136Z" fill="url(#castleFace)"/>
+    <path d="M288 330h58l-16-150h-58Z" fill="url(#castleSide)"/>
+    <path d="M136 180h170v-88H136Z" fill="url(#castleFace)"/>
+    <path d="M306 180h40v-88h-40Z" fill="url(#castleSide)"/>
+    <path d="M154 92h34L210 36l22 56h34l-24 26v28h-64V118Z" fill="url(#roof)"/>
+    <path d="M247 100h30l19-48 19 48h28l-21 23v23h-54v-23Z" fill="url(#roof)"/>
+    <path d="M112 178h42l21-40 21 40h38v34h-102Z" fill="url(#roof)"/>
+    <path d="M272 178h36l19-35 17 35h35v33h-107Z" fill="url(#roof)"/>
+    <path d="M176 213c25-13 50-13 76 0v28h-76Z" fill="#3b2b42" opacity="0.85"/>
+    <path d="M152 243h29v28h-29Z" fill="#241924"/>
+    <path d="M246 243h29v28h-29Z" fill="#241924"/>
+    <path d="M190 266h52v34h-52Z" fill="#221824"/>
+    <path d="M165 330h228v18H165Z" fill="#38283d"/>
+    <circle cx="224" cy="286" r="6" fill="#ffcf9d" opacity="0.8"/>
+    <circle cx="263" cy="286" r="6" fill="#ffcf9d" opacity="0.8"/>
+  </g>
+
+  <!-- Foreground road and mist -->
+  <path d="M565 620C650 540 748 492 830 466c94-29 194-37 278-27 61 7 111 20 162 37-54 38-114 71-185 97-76 28-166 47-262 53-118 7-201 1-258-6Z" fill="#0a0d15" opacity="0.75"/>
+  <path d="M0 470C122 448 239 447 360 431c120-15 201-48 309-46 80 1 144 25 214 44 96 25 186 25 281 5 72-15 135-40 209-40 82 0 161 22 227 48v138H0Z" fill="url(#mist)" opacity="0.6"/>
+
+  <!-- Wolf in foreground, looking toward the castle -->
+  <g transform="translate(365 330) scale(1.08)" filter="url(#softShadow)">
+    <path d="M110 215c-37-11-62-42-68-80-7-46 13-91 54-115 17-10 38-16 59-16 19 0 38 4 54 13 19 11 33 29 41 50-12 9-19 22-21 38-3 29 11 54 35 69-17 21-44 37-76 37-10 0-19-1-29-4-1 3-2 6-3 8-5 0-10 0-16 0-8 0-21 0-30 0Z" fill="url(#wolf)"/>
+    <path d="M97 53 67 22l7 48c-9 9-15 20-18 32l38-5c4-16 15-31 30-44Z" fill="#8f8897"/>
+    <path d="M217 49 247 18l-8 48c9 9 15 20 18 32l-38-5c-4-16-15-31-30-44Z" fill="#a7a0ac"/>
+    <path d="M77 109c6-20 20-35 39-42 13-5 27-7 41-4 15 3 28 11 38 23 8 9 13 20 14 32 2 15-2 29-11 41-10 14-23 23-39 28-24 7-48 3-67-12-19-14-28-35-15-66Z" fill="#dbd6de"/>
+    <path d="M88 113c4-13 13-23 27-27 10-4 21-4 32-1 12 4 21 12 26 24 4 8 5 17 4 26-2 12-8 22-17 30-9 7-21 12-34 13-18 2-32-3-43-14-11-11-16-28-13-51Z" fill="#f1ebef"/>
+    <path d="M101 123c3-8 9-14 17-17 6-2 13-3 20-1 8 2 14 7 18 14 3 5 5 11 4 17-2 8-6 14-12 19-6 5-14 7-22 8-13 2-23-2-30-11-7-7-9-17-7-29Z" fill="#1a1824"/>
+    <circle cx="120" cy="131" r="4.5" fill="#f6f0f5"/>
+    <circle cx="156" cy="131" r="4.5" fill="#f6f0f5"/>
+    <path d="M127 152c8 4 17 4 25 0" fill="none" stroke="#5c3540" stroke-width="4" stroke-linecap="round"/>
+    <path d="M129 183c10 6 21 9 33 9 10 0 19-2 29-7" fill="none" stroke="#d57c92" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M76 207c23-8 46-12 71-12s49 4 72 12" fill="none" stroke="#b76a80" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 219c26-7 53-7 79 0" fill="none" stroke="#e6a2b0" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+    <path d="M54 226c22-5 43-5 63 0" fill="none" stroke="#2c2f40" stroke-width="8" stroke-linecap="round"/>
+    <path d="M220 70c13 4 24 12 31 23" fill="none" stroke="#f2c3b9" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <path d="M33 70c10 11 19 24 22 40" fill="none" stroke="#f2c3b9" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  </g>
+
+  <!-- Leaves -->
+  <g fill="#d59a79" opacity="0.85">
+    <path d="M450 530c8-15 20-21 32-18-4 11-2 21 8 31-16 3-29 0-40-13Z"/>
+    <path d="M520 560c7-14 18-19 30-17-4 10-2 20 8 29-15 3-28 0-38-12Z"/>
+    <path d="M1260 518c8-15 20-21 32-18-4 11-2 21 8 31-16 3-29 0-40-13Z"/>
+    <path d="M1350 548c7-14 18-19 30-17-4 10-2 20 8 29-15 3-28 0-38-12Z"/>
+  </g>
+
+  <g opacity="0.45" fill="#f0c5a1">
+    <circle cx="650" cy="158" r="3"/>
+    <circle cx="702" cy="132" r="2"/>
+    <circle cx="912" cy="212" r="2.6"/>
+    <circle cx="1202" cy="228" r="3"/>
+  </g>
+</svg>
