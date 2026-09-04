@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "/src/assets/images/bg.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "/assets/images/bg.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -52,7 +52,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/src/assets/images/wolf.gif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "/assets/images/wolf.gif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "灰太狼大王",
 	bio: "我灰太狼大王一定会回来的",
 	links: [
